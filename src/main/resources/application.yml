@@ -3,3 +3,17 @@ server:
 spring:
   kafka:
     bootstrap-servers: localhost:9092
+  application:
+    name: MESSAGING-MICROSERVICE
+  datasource:
+    url: jdbc:postgresql://localhost:5432/messages
+    username: lawispringboot
+    password: Lawrence
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show_sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
